@@ -1,3 +1,7 @@
+"""
+Lists containing the valid arguments for format, expire, and privacy
+"""
+
 FORMATS = ( 
             '4cs', # 4CS
             '6502acme', # 6502 ACME Cross Assembler

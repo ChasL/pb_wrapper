@@ -1,6 +1,6 @@
 """
 A simple Pastebin API wrapper written in Python
-Distributed under the MIT license AKA Do whatever the fuck you want with it
+Distributed under the MIT license AKA Do whatever you want with it
 """
 
 import requests

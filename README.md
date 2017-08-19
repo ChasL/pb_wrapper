@@ -1,3 +1,3 @@
 # PB_WRAPPER
 
-A simple Python wrapper for Pastebin
+A simple Pastebin wrapper written in Python

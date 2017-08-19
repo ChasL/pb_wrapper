@@ -1,3 +1,8 @@
+"""
+A simple Pastebin API wrapper written in Python
+Distributed under the MIT license AKA Do whatever the fuck you want with it
+"""
+
 import requests
 from pb_dicts import FORMATS, EXPIRES, PRIVACY
 

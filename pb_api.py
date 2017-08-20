@@ -4,7 +4,7 @@ Distributed under the MIT license AKA Do whatever you want with it
 """
 
 import requests
-from pb_dicts import FORMATS, EXPIRES, PRIVACY
+from pb_lists import FORMATS, EXPIRES, PRIVACY
 
 def send_post(url, data):
     """ Responsible for converting data to utf8 and sending POST """

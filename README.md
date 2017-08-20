@@ -4,13 +4,31 @@ A simple Pastebin wrapper written in Python
 
 # Code examples:
 
-Create anonymous paste:
+<b><ul>Create paste with no additional arguments:</ul></b>
 ```python
->>>create_paste('yourdevkey', 'Paste content here')`
-```
-Create user paste with a title, formatted for python, Private, and expiring in 1 hour:
+from pb_api import PasteAPI
 
-(see pb_lists.py for accepted arguments for format, privacy, and expire)
-```python
->>>create_paste('devkey', 'Paste content', 'userkey', title='Paste Title', format='python', privacy='2', expire='1H')
+pb = PasteAPI('devkey', 'userkey') # userkey optional
+pb.create_paste('Paste content')
 ```
+<b>Create paste with a title, formatted for python, Private, and expiring in 1 hour:</b>
+
+(see pb_lists.py for valid arguments for format, privacy, and expire)
+```python
+from pb_api import PasteAPI
+
+pb = PasteAPI('devkey', 'userkey') # userkey optional
+pb.create_paste('Paste content', title='Paste Title', format='python', privacy='2', expire='1H')
+```
+
+<b>List pastes made by the user:</b>
+```python
+from pb_api import PasteAPI
+
+pb = PasteAPI('devkey', 'userkey') # userkey mandatory for list_user_pastes()
+pb.list_user_pastes(limit=10) # limit argument optional. defaults to 50
+```
+# Requirements
+The only requirement is the <b>requests</b> package
+
+```pip install requests```

@@ -1,6 +1,6 @@
 # PB_WRAPPER
 
-A simple Pastebin wrapper written in Python 3.4
+A simple Pastebin API wrapper written in Python 3.4
 
 # Code examples:
 
